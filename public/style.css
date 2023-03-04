@@ -1,0 +1,501 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 140px;
+    width: 40%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+}
+
+
+.menu .icon {
+    display: block;
+    color: #212222;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu #links {
+    display: none;
+    
+}
+
+.menu a {
+    color: white;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.menu .icon:hover {
+    background-color: #fc088c;
+    color: white;
+    transition:0.5s;
+}
+
+.menu .link:hover {
+    background-color: #790040;
+    transition:0.5s;
+}
+
+#body {
+    color: #212222;
+}
+
+#mug {
+    position: absolute;
+    z-index: 1;
+    width: 380px;
+    height: auto;
+    top: 20%;
+    left: 20%;
+
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    font-size: 130px;
+    height: 150px;
+    margin: 5px;
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+#top {
+    border: 0px;
+    padding-left: 12%;
+    left: 6%;
+    border-bottom-width: 1px;
+    border-style: solid;
+
+
+}
+
+#mid {
+    justify-content: flex-start;
+    z-index: 2;
+    left: -32%;
+}
+
+#bot {
+    border: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    padding-left: 12%;
+    left: 6%;
+    padding-top: 0;
+}
+
+#text {
+    padding-top: 9%;
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+ul {
+    list-style: circle;
+    list-style-position: inside;
+    padding-top: 3%;
+    position: relative;
+}
+
+ul li::before {
+    content: '\2022';
+    position: absolute;
+    color: #fc088c;
+    top: -6%;
+    left: 10%;
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h4 {
+    width: 60%;
+    font-size: 14px;
+}
+
+#shirt {
+    position: relative;
+    margin-top: 45%;
+    margin-left: 6%;
+}
+
+#colors {
+    display: block ruby;
+}
+
+.black {
+    background-color: #212222;
+    color: #212222;
+    height: 20px;
+    width: 46px;
+    margin-right: 20px;
+    border: none;
+}
+
+.pink {
+    background-color: #fc088c;
+    color: #fc088c;
+    height: 20px;
+    width: 46px;
+    border: none;
+}
+
+#buy {
+    display: block ruby;
+    font-size: 20px;
+    width: 330px;
+    border: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+#shirt img {
+    position: absolute;
+    top: -25%;
+    left: 30%;
+    z-index: -1;
+    width: 330px;
+    height: auto;
+    transform:
+        scaleX(-1) rotate(-12deg);
+}
+
+#bottle {
+    position: relative;
+    margin-top: 45%;
+    margin-left: 6%;
+    margin-bottom: 200px;
+}
+
+#bottle img {
+    position: absolute;
+    top: -17%;
+    left: 40%;
+    z-index: -1;
+    width: 200px;
+    height: auto;
+}
+
+#contactUs{
+    position: fixed;
+    top: 520px;
+    left: 1380px;
+    writing-mode: vertical-lr;
+    display:none;
+    z-index: 3;
+    
+
+}
+#pinkBar{
+    height: 30px;
+    width: 2px;
+    background-color: #fc088c;
+}
+
+#contactUs button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+footer {
+    background-color: #212222;
+    color: white;
+    height: 580px;
+
+}
+
+h3 {
+    position: relative;
+    top: 8%;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+form {
+    position: relative;
+    top: 16%;
+}
+
+form input {
+    background-color: #212222;
+    border: none;
+    outline: none;
+}
+
+#email {
+    position: relative;
+    width: 320px;
+    height: 50px;
+    top: 13px;
+    left: 20px;
+    color: gray;
+    font-size: 17px;
+    border: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-bottom-color: white;
+}
+
+[type="checkbox"] {
+    opacity: 0;
+    top: 18px;
+    position: relative;
+    left: 11px;
+    margin: 0;
+
+}
+
+[type="checkbox"]+label {
+    position: relative;
+    width: 277px;
+    top: 17px;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    color: gray;
+    line-height: 1.2;
+}
+
+[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 13px;
+    height: 13px;
+    outline: 1px solid gray;
+    background: #212222;
+}
+
+[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 13px;
+    height: 13px;
+    outline: 1px solid white;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png);
+    background-size: contain;
+}
+
+#termsandconditions {
+    color: white;
+}
+
+#send {
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 18px;
+    font-size: 18px;
+}
+
+#contact {
+    position: relative;
+    top: 215px;
+    left: 18px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        max-width: 1440px;
+    }
+    header img {
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        padding-left: 5vh;
+    }
+
+    .menu .icon {
+        display: none
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+    }
+
+    .menu #links {
+        display: flex;
+        justify-content: end;
+        padding-right: 5vh;
+    }
+
+    .menu a {
+        color: #212222;
+        background-color: none;
+    }
+
+    .menu .link:hover {
+        color: white;
+        background-color: #fc088c;
+    }
+
+    #mug {
+        width: 700px;
+        top: 22%;
+        left: 45%;
+    }
+
+    h1 {
+        font-size: 226px;
+        width: 1230px;
+        height: 222px;
+        padding-top: 2%;
+        padding-bottom: 7%;
+    }
+
+    #top {
+        justify-content: start;
+        left: 5%;
+        padding-left: 5%;
+    }
+
+    #mid {
+        top: -7%;
+        left: 34%;
+        width: 49%;
+    }
+
+    #bot {
+        left: 5%;
+        padding-left: 5%;
+    }
+
+    #text {
+        padding-top: 2%;
+        left: 38%;
+        position: relative;
+        width: 54%;
+    }
+
+    li {
+        width: 833px;
+        left: -15%;
+        position: relative;
+    }
+
+    ul li::before {
+        left: -0.5%;
+        top: -23%;
+    }
+
+    #shirt {
+        margin-top: 15%;
+        width: 720px;
+    }
+
+    #shirt img {
+        width: 65%;
+        transform:
+            scaleX(-1) rotate(-8deg);
+        left: 15%;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h4 {
+        width: 280px;
+        font-size: 20px;
+    }
+
+    #buy {
+        width: 620px;
+        justify-content: end;
+        display: flex;
+    }
+
+    #buy p {
+        padding-right: 10px;
+    }
+
+    .black {
+        height: 20px;
+        width: 55px;
+        border: none;
+    }
+
+    .pink {
+        height: 20px;
+        width: 55px;
+        border: none;
+    }
+
+    #bottle {
+        margin-top: 10%;
+        width: 650px;
+        left: 45%;
+    }
+
+    #bottle img {
+        left: 25%;
+        width: 35%;
+    }
+    #contactUs{
+        display: block ruby;
+    }
+footer{
+    height: 440px;
+    position: relative;
+    z-index: 4;
+}
+    footer h3 {
+        top: 18%;
+        left: 39%;
+        font-size: 40px;
+    }
+
+    form {
+        left: 49%;
+        scale: 1.2;
+    }
+
+    #email {
+        width: 640px;
+    }
+
+    [type="checkbox"]+label {
+        width: 400px;
+    }
+
+    #send {
+        top: 20px;
+        left: 123px;
+    }
+
+    #contact {
+        top: -35%;
+        left: 9%;
+        position: relative;
+        scale: 1.4;
+        width: 14%;
+    }
+}

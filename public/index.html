@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <img id="logo" src="./00_Recursos/logo.png">
+            <div id="links">
+                <a href="prueba.html" class="link">Menu 1</a>
+                <a href="Menu2.html" class="link">Menu 2</a>
+                <a href="Menu3.html" class="link">Menu 3</a>
+            </div>
+            <a href="javascript:void(0);" id="icon" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div id="body">
+        <div id="cup">
+            <img id="mug" src="./00_Recursos/Mug1.png">
+            <div id="title">
+                <h1 id="top">LOREM</h1>
+                <h1 id="mid">IPSUM</h1>
+                <h1 id="bot">DOLOR</h1>
+            </div>
+        </div>
+        <div id="text">
+            <ul>
+                <li> Lorem ipsum dolor sit ame amet, consectetur adipiscing elit, sed do <strong>eiusmod tempor
+                        incididunt ut</strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo.</li>
+            </ul>
+        </div>
+        <div id="contactUs" >
+            <div id="pinkBar"></div>
+            <button onclick="window.scrollBy(0, 2000)">Contact Us</button>
+        </div>
+        <div id="shirt">
+            <h2>T-shirt</h2>
+            <h4>Etiam vulputate dui efficitur ultrices pharetra. Preaesent tempo mollis purus.</h4>
+            <div id="colors">
+                <input id=TshirtBlack type="submit" class="black" onclick="changeColour('Tshirt', 'Black')">
+                <input id=TshirtPink type="submit" class="pink" onclick="changeColour('Tshirt', 'Pink')">
+            </div>
+            <div id="buy">
+                <p>Buy</p>
+                <p>&#x21B3</p>
+            </div>
+            <img id="TshirtImg" class="product" src="./00_Recursos/Tshirt1.png">
+        </div>
+        <div id="bottle">
+            <h2>Bottle</h2>
+            <h4>Etiam vulputate dui efficitur ultrices pharetra. Preaesent tempo mollis purus.</h4>
+            <div id="colors">
+                <input id=BottleBlack type="submit" class="black" onclick="changeColour('Bottle', 'Black')">
+                <input id=BottlePink type="submit" class="pink" onclick="changeColour('Bottle', 'Pink')">
+            </div>
+            <div id="buy">
+                <p>Buy</p>
+                <p>&#x21B3</p>
+            </div>
+            <img id="BottleImg" class="product" src="./00_Recursos/Bottle1.png">
+        </div>
+    </div>
+    <footer>
+        <h3>
+            We love what we do. <br>
+            We are Worköholics.
+        </h3>
+        <form action="mailto:hello@workoholics.es" method="post" enctype="text/plain">
+            <input type="text" name="email" id="email" placeholder="E-mail"> <br>
+            <p></p>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I have read and accepted the
+                <a href="www.workölics.es/termsandconditions" id="termsandconditions">Terms and Conditions.</a>
+            </label>
+            <input type="submit" value="Submit &#x21B3" id="send">
+        </form>
+        <div id="contact">
+            <p>
+                hello@workoholics.es <br>
+                +34 944 059 957
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
